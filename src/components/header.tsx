@@ -18,7 +18,7 @@ const Header = () => {
       <div className="flex items-center space-x-4 gap-4">
         <ConnectButton />
         <a
-          href="https://github.com/your-github-repo" // Replace with your actual GitHub repository URL
+          href="https://github.com/kingning2/xiaoman-dapp" // Replace with your actual GitHub repository URL
           target="_blank"
           rel="noopener noreferrer"
           className="text-gray-400 hover:text-white transition duration-300"

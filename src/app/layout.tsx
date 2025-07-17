@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import WagmiProvider from "@/WagmiProvider";
 import Header from "@/components/header";
+import { ScrollArea } from "@/components/ui/scroll-area";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,8 +31,12 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <WagmiProvider>
-          <Header />
-          {children}
+          <div className="flex flex-col h-[100vh] overflow-hidden">
+            <Header />
+            <ScrollArea className="flex-1 h-[calc(100vh-72px)] w-full">
+              {children}
+            </ScrollArea>
+          </div>
         </WagmiProvider>
       </body>
     </html>

@@ -2,6 +2,9 @@
 
 import { useAccount } from "wagmi";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
+import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
+import { Textarea } from "@/components/ui/textarea";
 
 export default function Home() {
   const { address } = useAccount();
@@ -9,8 +12,40 @@ export default function Home() {
   console.log(address);
 
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <ConnectButton />
+    <div className="">
+      <Input placeholder="Enter your message" />
+      <Textarea autoSave="off" />
+      <Button variant={"destructive"}>Send</Button>
+      <Input placeholder="Enter your message" />
+      <Textarea autoSave="off" />
+      <Button variant={"destructive"}>Send</Button>
+      <Input placeholder="Enter your message" />
+      <Textarea autoSave="off" />
+      <Button variant={"destructive"}>Send</Button>
+      <Input placeholder="Enter your message" />
+      <Textarea autoSave="off" />
+      <Button variant={"destructive"}>Send</Button>
+      <Input placeholder="Enter your message" />
+      <Textarea autoSave="off" />
+      <Button variant={"destructive"}>Send</Button>
+      <Input placeholder="Enter your message" />
+      <Textarea autoSave="off" />
+      <Button variant={"destructive"}>Send</Button>
+      <Input placeholder="Enter your message" />
+      <Textarea autoSave="off" />
+      <Button variant={"destructive"}>Send</Button>
+      <Input placeholder="Enter your message" />
+      <Textarea autoSave="off" />
+      <Button variant={"destructive"}>Send</Button>
+      <Input placeholder="Enter your message" />
+      <Textarea autoSave="off" />
+      <Button variant={"destructive"}>Send</Button>
+      <Input placeholder="Enter your message" />
+      <Textarea autoSave="off" />
+      <Button variant={"destructive"}>Send</Button>
+      <Input placeholder="Enter your message" />
+      <Textarea autoSave="off" />
+      <Button variant={"destructive"}>Send</Button>
     </div>
   );
 }
